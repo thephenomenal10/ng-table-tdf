@@ -1,6 +1,6 @@
 <div class="container-fluid" style=" text-align: justify; max-width: 700px;">
   <h1 style="margin-bottom: 20px;">Bootcamp EnrollmentForm</h1>
-
+  <div class="alert alert-danger" *ngIf="errMsg">{{errMsg}}</div>
   <form #userForm= "ngForm"  *ngIf="!isSubmitted" (ngSubmit) = "onSubmit()"  novalidate>
       
     <!-- <div ngModelGroup ="address">
